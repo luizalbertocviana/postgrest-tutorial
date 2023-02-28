@@ -1,0 +1,37 @@
+* postgrest api :verb:
+
+  template http://localhost:3000
+
+** todos
+
+  template /todos
+
+*** get
+
+  get
+
+*** post
+
+  post
+  Content-Type: application/json
+
+  {"task": "do bad thing"}
+
+*** with auth
+
+  template
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoidG9kb191c2VyIn0.vXYogVPOzxho3OfGI1cEaoRt0YCs4-ZJj1hDSsqBwW0
+  Content-Type: application/json
+
+  
+**** post
+
+  post
+
+  {"task": "learn how to auth"}
+
+**** patch
+
+  patch
+
+  {"done": "true"}
